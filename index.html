@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatherMusic - Stream & Download Your Favorite Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1db954;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #b3b3b3;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle at center, #1a2e22 0%, #0b0b0b 70%);
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #1db954;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #b3b3b3;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            background-color: #1db954;
+            color: #000000;
+            padding: 16px 36px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 500px;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 8px 24px rgba(29, 185, 84, 0.3);
+        }
+
+        .download-btn:hover {
+            background-color: #1ed760;
+            transform: scale(1.05);
+        }
+
+        .platform-info {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777777;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 100px 80px;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background-color: #181818;
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+            text-align: left;
+            border: 1px solid #282828;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #b3b3b3;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #000000;
+            color: #777777;
+            font-size: 14px;
+            border-top: 1px solid #282828;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo">FeatherMusic</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="download">
+        <h1>Music Without Limits.<br>Experience <span>FeatherMusic</span>.</h1>
+        <p>A lightweight, fast, and modern desktop music player built for true music lovers. Stream and save your favorite tracks instantly.</p>
+        
+        <!-- Yahan par apne setup file ka direct link ya path daal dena (jaise 'FeatherMusic-Setup.exe') -->
+        <a href="FeatherMusic-Setup.exe" class="download-btn" download>Download for Windows</a>
+        <div class="platform-info">Supports Windows 10 / 11 (64-bit)</div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>⚡ Lightning Fast</h3>
+            <p>Optimized with high-performance architecture so your app opens instantly and plays music without lag.</p>
+        </div>
+        <div class="feature-card">
+            <h3>❤️ Favorites & Playlists</h3>
+            <p>Easily save your favorite tracks with a single click and access them anytime you want.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Clean UI</h3>
+            <p>Enjoy a gorgeous dark-themed interface designed to give you a familiar and distraction-free experience.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FeatherMusic. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
